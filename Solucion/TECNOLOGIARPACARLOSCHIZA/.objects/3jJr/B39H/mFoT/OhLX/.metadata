@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Mouse Scroll ' DATOS TELEFONICOS …'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "OhLX6OnyU0G6Fx3RzOrrjA",
+  "Reference": "om74avWN2kyDkxcUvUygIQ/OhLX6OnyU0G6Fx3RzOrrjA",
+  "ParentRef": "om74avWN2kyDkxcUvUygIQ/mFoTRjT8JUaRBUaUzQJKtQ",
+  "Created": "2025-08-17T07:44:00.1159804Z",
+  "Updated": "2025-08-17T07:44:00.1159804Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

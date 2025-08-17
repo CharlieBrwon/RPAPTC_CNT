@@ -1,0 +1,1173 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CFA0C591397_v1_sub_chat_sub_completion_Create.Bundle;assembly=CFA0C591397_v1_sub_c.yvyyI4tpE4J1LerVVvGAep2" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:uwahm="clr-namespace:UiPath.Web.Activities.Http.Models;assembly=UiPath.Web.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Activities.System.FileOperations</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CFA0C591397_v1_sub_chat_sub_completion_Create.Bundle</x:String>
+      <x:String>UiPath.GSuite.Activities.Docs.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Timers</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Xsl</x:String>
+      <x:String>System.Xml.Xsl.Runtime</x:String>
+      <x:String>System.Xml.XPath</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>System.Security.Authentication</x:String>
+      <x:String>System.Net.Cache</x:String>
+      <x:String>System.Net.NetworkInformation</x:String>
+      <x:String>System.Net.Security</x:String>
+      <x:String>System.Net.Sockets</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Forms.Activities</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.Forms.Activities.Base</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CFA0C591397_v1_sub_objectminus_signdetection_Create.Bundle</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Web.Activities.Http.Models</x:String>
+      <x:String>UiPath.Web.Activities.Http</x:String>
+      <x:String>UiPath.Sdk.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>UiPath.Activities.System.ProcessTracking</x:String>
+      <x:String>UiPath.Core.Activities.ProcessTracking</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Filters</x:String>
+      <x:String>UiPath.GSuite.Activities.Filters</x:String>
+      <x:String>UiPath.GSuite.Gmail.Enums</x:String>
+      <x:String>UiPath.GSuite.Models</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Utilities</x:String>
+      <x:String>UiPath.Productivity.Activities.Diagnostics</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Triggers</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>CFA0C591397_v1_sub_c.yvyyI4tpE4J1LerVVvGAep2</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.WorkflowEvents.Activities</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>System.Net.NetworkInformation</AssemblyReference>
+      <AssemblyReference>System.Net.Ping</AssemblyReference>
+      <AssemblyReference>System.Net.Sockets</AssemblyReference>
+      <AssemblyReference>UiPath.Forms.Activities</AssemblyReference>
+      <AssemblyReference>CFA0C591397_v1_sub_o.O37w1Is5CQ1XAr9w1JKmPr2</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1179.6000000000001,5439.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="vJsSrcList" />
+      <Variable x:TypeArguments="x:String" Name="vJsSrc" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="vIndice" />
+      <Variable x:TypeArguments="x:String" Name="variable3" />
+      <Variable x:TypeArguments="x:String" Name="variable2" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="índice">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ForEach`1_3</x:String>
+            <x:String x:Key="SourcePropertyName">CurrentIndex</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="vOpcion" />
+      <Variable x:TypeArguments="x:String" Name="vProvincia" />
+      <Variable x:TypeArguments="x:String" Name="vApellidos" />
+      <Variable x:TypeArguments="x:Int32" Name="vContarContactos" />
+      <Variable x:TypeArguments="x:String" Name="vLogs" />
+      <Variable x:TypeArguments="x:String" Name="vRutaLogs" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="569.6,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Por Nombre" Title="Opción" TopMost="False">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[vOpcion]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="569.6,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="PICHINCHA" Title="Provincia" TopMost="False">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[vProvincia]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="569.6,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Castro" Title="Apellidos" TopMost="False">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[vApellidos]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <Assign sap:VirtualizedContainerService.HintSize="569.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_30">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[vContarContactos]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="569.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_31">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[vRutaLogs]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">C:\tmp\log.txt</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:CreateFile ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Crear Archivo Log" sap:VirtualizedContainerService.HintSize="569.6,56.8" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="[vLogs]" Path="[vRutaLogs]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CreateFile>
+    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[vRutaLogs]" sap:VirtualizedContainerService.HintSize="569.6,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="0 | Ingresando al portal web CNT" UseDefaultEncoding="False" />
+    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[vRutaLogs]" sap:VirtualizedContainerService.HintSize="569.6,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="1 | Ingresando al portal web CNT" UseDefaultEncoding="False" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Firefox  Guía Telefónica CNT EP" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="569.6,4742.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" IsIncognito="True" OpenMode="Always" ScopeGuid="eab1cd77-c268-4996-9208-c54d78d43e41" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="536,4502.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="vFireFoxJs" />
+              <Variable x:TypeArguments="s:String[]" Name="vListaImgJS" />
+              <Variable x:TypeArguments="x:String" Name="vBuscarPalabra" />
+              <Variable x:TypeArguments="x:String" Name="vRespuestaIA" />
+              <Variable x:TypeArguments="x:String" Name="vJsBandera" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Actualizar" sap:VirtualizedContainerService.HintSize="416,105.6" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V5" />
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[vRutaLogs]" sap:VirtualizedContainerService.HintSize="502.4,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="2 | Ingresando Filtros en el portal web (Busqueda, Provincia, Apellido)" UseDefaultEncoding="False" />
+            <uix:NSelectItem DisplayName="Seleccionar elemento 'Criterio de Búsqueda'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[vOpcion]" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" Version="V5">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="4">
+                  <x:String>-- Seleccione un criterio de Búsqueda --</x:String>
+                  <x:String>Por Número Telefónico</x:String>
+                  <x:String>Por Razón Social</x:String>
+                  <x:String>Por Nombre</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" CVScreenId="cefedb95-10af-4f8d-8e63-041e836beb13" ContentHash="Oriws5CFsEC5qt8tthnCEw" CvElementArea="136, 328, 292, 35" CvType="InputBox" DesignTimeRectangle="137, 329, 290, 34" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-control' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d7531eed-0761-4142-a257-b4c137b7f988" InformativeScreenshot="fb1d3401babe7b2409e98ae798b6b17d.png" Reference="om74avWN2kyDkxcUvUygIQ/N6z_IdHD0kW68img4Jmb_Q" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="cefedb95-10af-4f8d-8e63-041e836beb13" CvTextArea="136, 306, 143, 17" CvTextArgument="Criterio de Búsqueda" CvType="Text" DesignTimeRectangle="137, 304, 142, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Criterio de Búsqueda' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Criterio de Búsqueda' /&gt;" Guid="ebefe105-010f-4f2e-a5b8-46aba2ac84b7" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Seleccionar elemento 'Provincia'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[vProvincia]" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" Version="V5">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="25">
+                  <x:String>AZUAY</x:String>
+                  <x:String>BOLIVAR</x:String>
+                  <x:String>CA�AR</x:String>
+                  <x:String>CARCHI</x:String>
+                  <x:String>CHIMBORAZO</x:String>
+                  <x:String>COTOPAXI</x:String>
+                  <x:String>EL ORO</x:String>
+                  <x:String>ESMERALDAS</x:String>
+                  <x:String>GALAPAGOS</x:String>
+                  <x:String>GUAYAS</x:String>
+                  <x:String>IMBABURA</x:String>
+                  <x:String>LOJA</x:String>
+                  <x:String>LOS RIOS</x:String>
+                  <x:String>MANABI</x:String>
+                  <x:String>MORONA SANTIAGO</x:String>
+                  <x:String>NAPO</x:String>
+                  <x:String>ORELLANA</x:String>
+                  <x:String>PASTAZA</x:String>
+                  <x:String>PICHINCHA</x:String>
+                  <x:String>SANTA ELENA</x:String>
+                  <x:String>SANTO DOMINGO DE LOS TSACHILAS</x:String>
+                  <x:String>SUCUMBIOS</x:String>
+                  <x:String>TUNGURAHUA</x:String>
+                  <x:String>ZAMORA CHINCHIPE</x:String>
+                  <x:String>COBERTURA CNT EP</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" CVScreenId="3eb1d360-1d2f-4cf8-8926-84abf1f28472" ContentHash="pAKE-LigZkiNnJVVkUW0iQ" CvElementArea="136, 449, 291, 36" CvType="InputBox" DesignTimeRectangle="137, 450, 290, 34" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='form-control' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c46ef42f-a2d2-49bb-ac8b-cbf823251b8d" InformativeScreenshot="f54b900b49e49f7eb28236f699c7f3ff.png" Reference="om74avWN2kyDkxcUvUygIQ/USfaOs63q0Ky_bxdaUJGtQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3eb1d360-1d2f-4cf8-8926-84abf1f28472" CvTextArea="136, 428, 69, 13" CvTextArgument="Provincia:" CvType="Text" DesignTimeRectangle="137, 425, 72, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='lselect' aaname='Provincia: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Provincia:' /&gt;" Guid="8f1dffc7-8b75-47f4-b382-05c6fc77e24a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NSelectItem>
+            <uix:NSetText DisplayName="Set Text 'Apellidos'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" Text="[vApellidos]" Version="V5">
+              <uix:NSetText.Target>
+                <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" CVScreenId="3166b41f-4921-4b2b-baf6-82d79a2f2924" ContentHash="UWmaduiwA0y7IJckdGktTQ" CvElementArea="755, 449, 204, 37" CvType="InputBox" DesignTimeRectangle="757, 450, 200, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e5f96b79-1ba9-40f4-b77c-92b663ebe7e8" InformativeScreenshot="7be14774f78e866bbabdf8406cabcb3a.png" Reference="om74avWN2kyDkxcUvUygIQ/Gb0jl5EAuEu6aHfJyS07RA" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3166b41f-4921-4b2b-baf6-82d79a2f2924" CvTextArea="820, 428, 69, 16" CvTextArgument="Apellidos:" CvType="Text" DesignTimeRectangle="821, 425, 72, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Apellidos: ' type='' tag='LABEL' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Apellidos:' /&gt;" Guid="909e2889-619c-45e5-820d-5ee9e2de8c3c" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NSetText>
+            <uix:NGetText DisplayName="Get Text 'mundo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" TextString="[vBuscarPalabra]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" CVScreenId="e9d841c6-e8da-4a45-9277-c0fd9d435fe5" ContentHash="RMgr3P5DA0K8oxJW3ZgAPA" CvType="AnyWordGroup" DesignTimeRectangle="137, 526, 47, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" Guid="f83be56a-8588-4bfc-90f2-6cceaebc70d2" InformativeScreenshot="afe050f93c34cb8e96a2b9bde74816bb.png" Reference="om74avWN2kyDkxcUvUygIQ/qMRQvGB5BUWLD-t3ZSB0UQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_27">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[vJsBandera]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="Inject Js Script 'DIV'" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" ScriptCode="&#xA;function (element, input) {&#xA;    var results = [];&#xA;    var images = document.querySelectorAll('div.captchaImages img.captchaImage');&#xA;&#xA;    images.forEach(img =&gt; {&#xA;        results.push(&#xA;            'src=' + img.getAttribute('src') + ' title=' + img.getAttribute('title') + '**|'&#xA;        );&#xA;    });&#xA;&#xA;    return results; // UiPath recibirá un array de cadenas legibles&#xA;}&#xA;&#xA;" Version="V5">
+              <uix:NInjectJsScript.ScriptOutput>
+                <OutArgument x:TypeArguments="x:String">[vFireFoxJs]</OutArgument>
+              </uix:NInjectJsScript.ScriptOutput>
+              <uix:NInjectJsScript.Target>
+                <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" ContentHash="Nvun44AcLEmc83RQ8JBXIA" DesignTimeRectangle="137, 564, 1108, 32" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl class='captchaImages' parentid='captcha1' tableRow='2' tag='DIV' /&gt;" Guid="163da3c4-b58f-4e83-aaac-dc507a1ffead" InformativeScreenshot="efc295e946b21aa5d5311cf02366d9c3.png" Reference="om74avWN2kyDkxcUvUygIQ/0ZuTgiN1-UWBloP92Dq2TA" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NInjectJsScript.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NInjectJsScript>
+            <Assign sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_15">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[vListaImgJS]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[vFireFoxJs.Split("|")]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_25">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[vRespuestaIA]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[vRutaLogs]" sap:VirtualizedContainerService.HintSize="502.4,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="3 | Recorrer Imagenes Captcha" UseDefaultEncoding="False" />
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[índice]" DisplayName="For Each - Recorrer ImagesCaptcha" sap:VirtualizedContainerService.HintSize="502.4,56.8" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[vListaImgJS]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="484.8,1405.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="vJsLinea" />
+                      <Variable x:TypeArguments="x:String" Name="vResultado" />
+                      <Variable x:TypeArguments="x:String" Name="vResultadoTitle" />
+                      <Variable x:TypeArguments="x:String" Name="vJsRutaImagen" />
+                      <Variable x:TypeArguments="x:String" Name="vRespuestaIA" />
+                      <Variable x:TypeArguments="x:String" Name="vJsImagenResultado" />
+                      <Variable x:TypeArguments="p:PythonObject" Name="vPyResultado" />
+                      <Variable x:TypeArguments="p:PythonObject" Name="vPyResMetodo" />
+                      <Variable x:TypeArguments="uwahm:HttpResponseSummary" Name="vJsGuardarImg" />
+                      <Variable x:TypeArguments="x:String" Name="vDescargas" />
+                      <Variable x:TypeArguments="x:String" Name="vJsResultadoImg" />
+                      <Variable x:TypeArguments="x:String" Name="vJsRutaCompletaImg" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[vJsBandera = &quot;TRUE&quot;]" sap:VirtualizedContainerService.HintSize="451.2,336" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Continue sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[vJsLinea]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentText.ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_17">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[vResultado]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(vJsLinea, "(?&lt;=src=)(.*?)(?=title=)").Value]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_18">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[vResultadoTitle]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(vJsLinea, "(?&lt;=title=)(.*?)(?=\*\*)").Value]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_19">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[vJsRutaImagen]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[vResultado.Replace("../../lib/", "https://micnt.com.ec/cntapp/lib/")]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_24">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[vJsRutaCompletaImg]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">["C:\tmp\" + vResultadoTitle + ".png"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="451.2,280" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="s:Byte[]" Name="vJsImg" />
+                        <Variable x:TypeArguments="uwahm:HttpResponseSummary" Name="vJsImg2" />
+                        <Variable x:TypeArguments="x:String" Name="vJsImgBody" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim exito As Boolean&#xA;Try&#xA;    ' Desactiva validación de SSL&#xA;    ServicePointManager.ServerCertificateValidationCallback = Function(sender, cert, chain, sslPolicyErrors) True&#xA;&#xA;    ' Descargar archivo desde la URL a la ruta indicada&#xA;    Using client As New WebClient()&#xA;        client.DownloadFile(Argument1, Argument2)&#xA;    End Using&#xA;&#xA;    exito = True&#xA;Catch&#xA;    exito = False&#xA;End Try&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,188" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                        <ui:InvokeCode.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="Argument1">[vJsRutaImagen]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Argument2">["C:\tmp\" + vResultadoTitle +".png"]</InArgument>
+                        </ui:InvokeCode.Arguments>
+                      </ui:InvokeCode>
+                    </Sequence>
+                    <isactr:ConnectorActivity Configuration="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" ConnectionId="0ec4be3c-b14f-4f19-9789-5bfa0c591397" DisplayName="Image Analysis" sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="267d190b-590f-304a-a865-e9d3722fa772">
+                      <isactr:ConnectorActivity.FieldObjects>
+                        <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">gpt-4o-mini-2024-07-18</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">["TRUE si la imagen contiene " + vBuscarPalabra + ", FALSE si no lo es."]</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="image_type" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">File</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="_file" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath(vJsRutaCompletaImg)]</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="image_url" Type="FieldArgument" />
+                        <isactr:FieldObject Name="topK" Type="FieldArgument" />
+                        <isactr:FieldObject Name="topP" Type="FieldArgument" />
+                        <isactr:FieldObject Name="top_p" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="instruction" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">["TRUE si la imagen contiene " + vBuscarPalabra + ", FALSE si no lo es."]</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64" />
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="temperature" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Double">0</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="n" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="_stop" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String" />
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="out_text" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <OutArgument x:TypeArguments="x:String">[vJsResultadoImg]</OutArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="Jit_v1_sub_chat_sub_completion" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <OutArgument x:TypeArguments="uiascb:v1_sub_chat_sub_completion_Create" />
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                      </isactr:ConnectorActivity.FieldObjects>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </isactr:ConnectorActivity>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="Assign_20">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[vRespuestaIA]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[vJsResultadoImg]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <If Condition="[vRespuestaIA = &quot;TRUE&quot;]" sap:VirtualizedContainerService.HintSize="451.2,48" sap2010:WorkflowViewState.IdRef="If_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484.8,1158.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="vJsSalidaImgSelect" />
+                            <Variable x:TypeArguments="x:String" Name="vJsXmlTag" />
+                            <Variable x:TypeArguments="ui:UiElement" Name="vJsElementoEncontrado" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_28">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[vJsBandera]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">TRUE</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_26">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[vJsXmlTag]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;webctrl tag='TABLE' idx='2' /&gt;"  &amp; "&lt;webctrl class='captchaImages' parentid='captcha1' tableRow='2' tag='DIV' /&gt;" &amp;  "&lt;webctrl tag='IMG' idx='" &amp; (índice+1).ToString() &amp; "' /&gt;"]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'IMG'" FoundElement="[vJsElementoEncontrado]" sap:VirtualizedContainerService.HintSize="451.2,139.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                            <ui:WaitUiElementAppear.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="96426a86-f12a-4c79-9f58-7496c9a688fd" InformativeScreenshot="936e83cd40739c2b839283870a01197f" Selector="[vJsXmlTag]">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:WaitUiElementAppear.Target>
+                          </ui:WaitUiElementAppear>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="NClick_12" InUiElement="[vJsElementoEncontrado]" KeyModifiers="None" MouseButton="Left" Version="V5">
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <If Condition="[vRespuestaIA = &quot;TRUE&quot;]" sap:VirtualizedContainerService.HintSize="451.2,675.2" sap2010:WorkflowViewState.IdRef="If_2">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,456" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Enviar(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" Version="V5">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" CVScreenId="b07452d1-4f13-4178-8740-1fecbd325849" ContentHash="pqln0TVjnkuHN-WKGl9j8w" CvElementArea="380, 599, 69, 36" CvTextArea="394, 610, 41, 13" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="381, 600, 66, 34" ElementType="Button" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='BUTTON' /&gt;" Guid="87446da3-6171-4861-9f4d-dbb5f70926af" InformativeScreenshot="b0912047200462a10af473435fb615d1.png" Reference="om74avWN2kyDkxcUvUygIQ/SY8-UVIxMk-uuXynrktaqw" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="449.6,334.4" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DisplayName="Inject Js Script 'Enviar'" sap:VirtualizedContainerService.HintSize="416,274.4" sap2010:WorkflowViewState.IdRef="NInjectJsScript_4" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" ScriptCode="[&quot;(function() {&#xA;    var boton = document.querySelector('button[onclick=&quot;&quot;fnValidar()&quot;&quot;]');&#xA;    if (boton) {&#xA;        boton.click();&#xA;        return 'Click en botón con fnValidar()';&#xA;    }&#xA;    return 'Botón no encontrado';&#xA;})();&quot;]" Version="V5">
+                                        <uix:NInjectJsScript.Target>
+                                          <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" ContentHash="OdiEC2isx0O4dpvJkkl_FQ" DesignTimeRectangle="381, 596, 66, 34" ElementType="Button" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='BUTTON' /&gt;" Guid="b9d7c528-2886-4bea-93ec-1ab3d9edff14" InformativeScreenshot="b566351358d42968539ccb0dafe17d47.png" Reference="om74avWN2kyDkxcUvUygIQ/t7bFden1FkqSF6h8DPm7nw" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                                        </uix:NInjectJsScript.Target>
+                                      </uix:NInjectJsScript>
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:CommentOut>
+                                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[vRutaLogs]" sap:VirtualizedContainerService.HintSize="502.4,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="4 | Captcha Superado" UseDefaultEncoding="False" />
+            <Sequence DisplayName="Extraer Datos Tabla" sap:VirtualizedContainerService.HintSize="502.4,2355.2" sap2010:WorkflowViewState.IdRef="Sequence_56">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[vJsBandera = &quot;TRUE&quot;]" sap:VirtualizedContainerService.HintSize="468.8,2261.6" sap2010:WorkflowViewState.IdRef="If_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,2040.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="vPaginas" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="vJsExtractDataTable" />
+                      <Variable x:TypeArguments="x:String" Name="vLogs" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="vJsFiltrado" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="vJsTablaOrdenada" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll ' DATOS TELEFONICOS …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,291.2" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" Version="V5">
+                      <uix:NMouseScroll.SearchedElement>
+                        <uix:SearchedElement>
+                          <uix:SearchedElement.Target>
+                            <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" CVScreenId="7001c775-8ffb-47cf-ba56-e6c78cc6c4e2" ContentHash="E3bWAp3R9kKCyliDy6hqzg" CvTextArea="331, 266, 104, 17" CvTextArgument="Página 1 de 128" CvType="Text" DesignTimeRectangle="332, 264, 575, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" Guid="ac6d34bd-b469-4719-8735-9f191d6f6509" InformativeScreenshot="b02b4e2f5a280d8cb780168de8237469.png" Reference="om74avWN2kyDkxcUvUygIQ/OhLX6OnyU0G6Fx3RzOrrjA" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                          </uix:SearchedElement.Target>
+                          <uix:SearchedElement.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:SearchedElement.Timeout>
+                        </uix:SearchedElement>
+                      </uix:NMouseScroll.SearchedElement>
+                      <uix:NMouseScroll.Target>
+                        <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" ContentHash="XneAuNzaUkeaZHgnnzb8Pw" DesignTimeRectangle="331, 652, 720, 631" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;" Guid="87e65838-12cc-40a5-80cc-78ca688e89a3" InformativeScreenshot="9824d7cc09fd9463e5dab9b109c2f7da.png" Reference="om74avWN2kyDkxcUvUygIQ/sdJxxq6tr0uW8lKfg0-q5g" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                      </uix:NMouseScroll.Target>
+                    </uix:NMouseScroll>
+                    <uix:NGetText DisplayName="Get Text 'Página 1 de 128'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" TextString="[vPaginas]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" CVScreenId="4790cc40-e652-4866-b101-08d1163b39f1" ContentHash="ev0fhg6JxEqRTiE4JLbVKA" CvType="AnyWordGroup" DesignTimeRectangle="332, 547, 575, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" Guid="0da09a31-5f2b-4e21-a7ad-82e0d12d850d" InformativeScreenshot="b02b4e2f5a280d8cb780168de8237469.png" Reference="om74avWN2kyDkxcUvUygIQ/hOfXtrZ9fU655c5WWT0wUQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[vRutaLogs]" sap:VirtualizedContainerService.HintSize="433.6,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="5 | Extraendo datos del portal" UseDefaultEncoding="False" />
+                    <uix:NExtractData ContinueOnError="True" DataTable="[vJsExtractDataTable]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='false' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-3' ReferenceIdx='3' Name='Column-3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Column-1' attr='fulltext' /&gt;&lt;column name='Column-2' attr='fulltext' /&gt;&lt;column name='Column-3' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="20" ScopeIdentifier="eab1cd77-c268-4996-9208-c54d78d43e41" Timeout="10" Version="V5">
+                      <uix:NExtractData.NextLink>
+                        <uix:TargetAnchorable BrowserURL="micnt.com.ec/cntapp/guia104/php/guia_cntat.php" CVScreenId="6d22fb4e-1918-4036-a89c-baad34edd466" CvElementArea="1019, 457, 14, 17" CvType="ArrowButton" DesignTimeRectangle="1018, 458, 14, 14" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl aaname='Ir Página Siguiente' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Ir Página Siguiente' type='' tag='IMG' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="49299042-de8a-4075-9d6c-c959f3dac9e3" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NExtractData.NextLink>
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable BrowserURL="https://micnt.com.ec/cntapp/guia104/php/guia_cntat.php?paginas=12&amp;cmbprov2=17&amp;cmbcriterio=3&amp;txtusuarioapellido=CASTRO&amp;txtusuarionombre=&amp;hflagsubmit=1" DesignTimeRectangle="331, 448, 720, 617" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;" Guid="f926af89-ddff-4d35-9f3b-7ecd52c225f6" InformativeScreenshot="e495fc9eafbcf754d8fbbd62a49bd4b8.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[vRutaLogs]" sap:VirtualizedContainerService.HintSize="433.6,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="6 | Preparando datos (Limpieza y ordenamiento por Localidad)" UseDefaultEncoding="False" />
+                    <ui:FilterDataTable DataTable="[vJsExtractDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="433.6,194.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[vJsFiltrado]" SelectColumnsMode="Remove">
+                      <ui:FilterDataTable.Filters>
+                        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                          <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                            <ui:FilterOperationArgument.Column>
+                              <InArgument x:TypeArguments="x:String">["Column-0"]</InArgument>
+                            </ui:FilterOperationArgument.Column>
+                            <ui:FilterOperationArgument.Operand>
+                              <InArgument x:TypeArguments="x:String">["DATOS"]</InArgument>
+                            </ui:FilterOperationArgument.Operand>
+                          </ui:FilterOperationArgument>
+                        </scg:List>
+                      </ui:FilterDataTable.Filters>
+                      <ui:FilterDataTable.SelectColumns>
+                        <scg:List x:TypeArguments="InArgument" Capacity="4">
+                          <x:Null />
+                        </scg:List>
+                      </ui:FilterDataTable.SelectColumns>
+                    </ui:FilterDataTable>
+                    <ui:FilterDataTable DataTable="[vJsFiltrado]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="433.6,194.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[vJsFiltrado]" SelectColumnsMode="Remove">
+                      <ui:FilterDataTable.Filters>
+                        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                          <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                            <ui:FilterOperationArgument.Column>
+                              <InArgument x:TypeArguments="x:String">["Column-0"]</InArgument>
+                            </ui:FilterOperationArgument.Column>
+                            <ui:FilterOperationArgument.Operand>
+                              <InArgument x:TypeArguments="x:String">["Número"]</InArgument>
+                            </ui:FilterOperationArgument.Operand>
+                          </ui:FilterOperationArgument>
+                        </scg:List>
+                      </ui:FilterDataTable.Filters>
+                      <ui:FilterDataTable.SelectColumns>
+                        <scg:List x:TypeArguments="InArgument" Capacity="4">
+                          <x:Null />
+                        </scg:List>
+                      </ui:FilterDataTable.SelectColumns>
+                    </ui:FilterDataTable>
+                    <ui:SortDataTable ColumnName="{x:Null}" DataColumn="{x:Null}" DataTable="[vJsFiltrado]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="433.6,112.8" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" OutputDataTable="[vJsTablaOrdenada]" SortOrder="Ascending">
+                      <ui:SortDataTable.ColumnIndex>
+                        <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+                          <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="3" />
+                        </InArgument>
+                      </ui:SortDataTable.ColumnIndex>
+                    </ui:SortDataTable>
+                    <ui:AppendRange WorkbookPathResource="{x:Null}" DataTable="[vJsTablaOrdenada]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="433.6,148" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="DATOS" WorkbookPath="C:\tmp\CNT_DATOS.xlsx" />
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_32">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[vContarContactos]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[vJsTablaOrdenada.Rows.Count]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[vRutaLogs]" sap:VirtualizedContainerService.HintSize="433.6,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="7 | Agregando datos al archivo excel" UseDefaultEncoding="False" />
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="Delay_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Delay>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+            <Sequence DisplayName="Enviar Correo" sap:VirtualizedContainerService.HintSize="502.4,752.8" sap2010:WorkflowViewState.IdRef="Sequence_57">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="vFile" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_29">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[vFile]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">C:\tmp\CNT_DATOS.xlsx</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[vRutaLogs]" sap:VirtualizedContainerService.HintSize="433.6,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="8 | Archivo excel enviado por correo" UseDefaultEncoding="False" />
+              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="FilePaths" Body="[&quot; Estimados,&#xD;&#xA;&#xD;&#xA;Se adjunta un informe con un total de &quot; &amp; vContarContactos &amp; &quot; contacto(s).&#xD;&#xA;&quot;]" ConnectionId="b82cfb9c-837a-426b-a7f5-59226b6d92ee" ConnectionMode="IntegrationService" DisplayName="Send SMTP Email" EnableSSL="True" sap:VirtualizedContainerService.HintSize="433.6,385.6" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" SecureConnection="Auto" Subject="Bot - Contactos" To="cardev.2015@gmail.com" UseISConnection="True" UseRichTextEditor="True">
+                <ui:SendMail.AttachmentsBackup>
+                  <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
+                    <usau:BackupSlot.BackupValues>
+                      <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+                        <x:Null />
+                      </scg:List>
+                      <scg:List x:TypeArguments="x:Object" x:Key="FilePaths" Capacity="2">
+                        <x:Null />
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                      </scg:List>
+                      <scg:List x:TypeArguments="x:Object" x:Key="Builder" Capacity="1">
+                        <x:Null />
+                      </scg:List>
+                    </usau:BackupSlot.BackupValues>
+                  </usau:BackupSlot>
+                </ui:SendMail.AttachmentsBackup>
+                <ui:SendMail.ConnectionDetailsBackupSlot>
+                  <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="IntegrationService">
+                    <usau:BackupSlot.BackupValues>
+                      <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
+                    </usau:BackupSlot.BackupValues>
+                  </usau:BackupSlot>
+                </ui:SendMail.ConnectionDetailsBackupSlot>
+                <ui:SendMail.Files>
+                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                    <InArgument x:TypeArguments="x:String">[vFile]</InArgument>
+                  </scg:List>
+                </ui:SendMail.Files>
+              </ui:SendMail>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1374, 245, 1382, 736" BrowserType="Firefox" ContentHash="NLJDjKwHC0ucxVFNBhoE3Q" IconBase64="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" InformativeScreenshot="12385598bcb1bdd24bfaa3ae6b73f546.png" Reference="om74avWN2kyDkxcUvUygIQ/mFoTRjT8JUaRBUaUzQJKtQ" Selector="&lt;html app='firefox.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" Url="https://micnt.com.ec/cntapp/guia104/php/guia_cntat.php?hflagsubmit=0&amp;cmbcriterio=3" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

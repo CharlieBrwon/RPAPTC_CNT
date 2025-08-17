@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Apellidos",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Gb0jl5EAuEu6aHfJyS07RA",
+  "Reference": "om74avWN2kyDkxcUvUygIQ/Gb0jl5EAuEu6aHfJyS07RA",
+  "ParentRef": "om74avWN2kyDkxcUvUygIQ/mFoTRjT8JUaRBUaUzQJKtQ",
+  "Created": "2025-08-16T02:29:30.2716319Z",
+  "Updated": "2025-08-16T02:29:30.2716319Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

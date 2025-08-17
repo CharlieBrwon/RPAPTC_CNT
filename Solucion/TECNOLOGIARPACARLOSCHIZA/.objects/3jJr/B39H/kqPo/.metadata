@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge",
+  "Type": "Screen",
+  "Id": "kqPoOmHT7kWo6H_QUynkGQ",
+  "Reference": "om74avWN2kyDkxcUvUygIQ/kqPoOmHT7kWo6H_QUynkGQ",
+  "ParentRef": "om74avWN2kyDkxcUvUygIQ/B39HIyPnXUaa9aRtR6rckA",
+  "Created": "2025-08-16T00:53:17.5443882Z",
+  "Updated": "2025-08-16T00:53:17.5443882Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
